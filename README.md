@@ -3,7 +3,7 @@
 <img width="584" alt="screenshot" src="https://user-images.githubusercontent.com/66177285/144704373-4866cd88-2c0d-4a28-a8be-8221441d35ab.png">
 
 Weather App built with React.
-[Deployed](https://myweatherapp.netlify.app/)
+[Deployed](https://weatherapp-azure.vercel.app/)
 
 ## Tech Stack
 
