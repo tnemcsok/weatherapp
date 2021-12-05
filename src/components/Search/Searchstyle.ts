@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as LocationIconSvg } from "../../assets/location-icon.svg";
 import { ReactComponent as SearchIconSvg } from "../../assets/search-icon.svg";
 
-export const SearchElement = styled.form`
+export const SearchElement = styled.div`
   position: relative;
   height: 3.25rem;
   border-radius: 26px;

@@ -17,7 +17,6 @@ import Suggestion from "./Suggestion";
 const Search: React.FC = () => {
   const dispatch = useDispatch();
   const suggestionRef = useRef(null);
-  const inputRef = useRef(null);
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -39,6 +38,7 @@ const Search: React.FC = () => {
   };
 
   const showPosition = (position: any) => {
+    console.log(position.coords.latitude);
     dispatch(
       fetchWeather({
         lat: position.coords.latitude,
@@ -73,7 +73,6 @@ const Search: React.FC = () => {
         onChange={onSearchInputChanged}
         onKeyDown={onKeyDown}
         placeholder="Search for location"
-        ref={inputRef}
       />
       <LocationButton
         onClick={() => {
